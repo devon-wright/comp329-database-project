@@ -10,28 +10,31 @@ using System.Windows.Forms;
 
 /*
  *  TODO:
- *  - Add User SQL check
  *  - Add Admin SQL + Connect to Admin_Page form
+ *  - Find a way to sepearate user from admin
  */ 
 
 namespace comp329_database_project
 {
     public partial class Login_Page : Form
     {
+        OracleAccessWidget DBWIDGET;
+
         public Login_Page()
         {
             InitializeComponent();
-            textBoxFirstname.Focus();
+            DBWIDGET = new OracleAccessWidget();
+            textBoxFirstname.Focus()
         }
 
         private void buttonLoginUser_Click(object sender, EventArgs e)
         {
             string username = textBoxFirstname.Text;
-            string password = textBoxPassword.Text;
+            //string password = textBoxPassword.Text;
             bool isCorrect = false;
 
             //Do an SQL check for user - edit "isCorrect"
-            // ...
+            isCorrect = DBWIDGET.itemExists("SELECT * FROM Person WHERE fname='" + username + "'"); // <<
 
             if (isCorrect)
             {
@@ -45,23 +48,23 @@ namespace comp329_database_project
             {
                 //Show a dialogue box to reenter data, clear password field
                 MessageBox.Show("Firstname/Password is incorrect. Please re-enter");
-                textBoxPassword.Clear();
-                textBoxPassword.Focus();
+                textBoxFirstname.Clear();
+                textBoxFirstname.Focus();
             }
         }
 
         private void buttonLoginAdmin_Click(object sender, EventArgs e)
         {
             string username = textBoxFirstname.Text;
-            string password = textBoxPassword.Text;
+            //string password = textBoxPassword.Text;
             bool isCorrect = false;
 
             //Do an SQL check for admin - edit "isCorrect"
-            // ...
+            isCorrect = DBWIDGET.itemExists("SELECT * FROM Person WHERE fname='" + username + "'"); // <<
 
             if (isCorrect)
             {
-                //Login the user - by opening Admin_Window form and hide Form1 form (this)
+                //Login the admin - by opening Admin_Window form and hide Form1 form (this)
                 //Admin_Window AdminPage = new Admin_Window(username);
                 //this.Hide();
                 //Admin_Window.ShowDialog();
@@ -70,9 +73,9 @@ namespace comp329_database_project
             else
             {
                 //Show a dialogue box to reenter data, clear password field
-                MessageBox.Show("Firstname/Password is incorrect. Please re-enter");
-                textBoxPassword.Clear();
-                textBoxPassword.Focus();
+                MessageBox.Show("Firstname is incorrect. Please re-enter");
+                textBoxFirstname.Clear();
+                textBoxFirstname.Focus();
             }
         }
 

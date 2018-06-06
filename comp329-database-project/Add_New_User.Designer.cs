@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.panelLoginAll = new System.Windows.Forms.Panel();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBoxPostcode = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxCity = new System.Windows.Forms.TextBox();
@@ -46,6 +44,8 @@
             this.labelAddUserTitle = new System.Windows.Forms.Label();
             this.buttonCancelAdd = new System.Windows.Forms.Button();
             this.buttonAddUser = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.panelLoginAll.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,22 +74,6 @@
             this.panelLoginAll.Name = "panelLoginAll";
             this.panelLoginAll.Size = new System.Drawing.Size(334, 411);
             this.panelLoginAll.TabIndex = 6;
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Location = new System.Drawing.Point(123, 281);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(160, 20);
-            this.textBoxPassword.TabIndex = 17;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(62, 284);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Password:";
             // 
             // textBoxPostcode
             // 
@@ -218,6 +202,23 @@
             this.buttonAddUser.Text = "Add this User";
             this.buttonAddUser.UseVisualStyleBackColor = true;
             this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(62, 284);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Password:";
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Enabled = false;
+            this.textBoxPassword.Location = new System.Drawing.Point(123, 281);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(160, 20);
+            this.textBoxPassword.TabIndex = 17;
             // 
             // Add_New_User
             // 

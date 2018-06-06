@@ -116,6 +116,7 @@
             // 
             // textBoxPassword
             // 
+            this.textBoxPassword.Enabled = false;
             this.textBoxPassword.Location = new System.Drawing.Point(119, 249);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(160, 20);

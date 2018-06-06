@@ -36,16 +36,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel_Icecream_1 = new System.Windows.Forms.Panel();
-            this.labelItemTItle = new System.Windows.Forms.Label();
-            this.pictureBoxIcecream = new System.Windows.Forms.PictureBox();
-            this.numericUpDownAmount = new System.Windows.Forms.NumericUpDown();
-            this.buttonAddtoCart = new System.Windows.Forms.Button();
             this.labelStoreTitle = new System.Windows.Forms.Label();
             this.buttonRemoveSelected = new System.Windows.Forms.Button();
             this.labelCartTitle = new System.Windows.Forms.Label();
@@ -61,12 +51,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            this.panel_Icecream_1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcecream)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -110,8 +94,6 @@
             // flowLayoutPanelStore
             // 
             this.flowLayoutPanelStore.Controls.Add(this.panel1);
-            this.flowLayoutPanelStore.Controls.Add(this.panel2);
-            this.flowLayoutPanelStore.Controls.Add(this.panel_Icecream_1);
             this.flowLayoutPanelStore.Location = new System.Drawing.Point(12, 49);
             this.flowLayoutPanelStore.Name = "flowLayoutPanelStore";
             this.flowLayoutPanelStore.Padding = new System.Windows.Forms.Padding(10);
@@ -181,134 +163,6 @@
             this.button1.Text = "Add to Cart";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.buttonAddtoCart_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.numericUpDown2);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(160, 13);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(141, 163);
-            this.panel2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = " xx ICECREAM";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(134, 129);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.numericUpDown2.Location = new System.Drawing.Point(93, 138);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(44, 20);
-            this.numericUpDown2.TabIndex = 2;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(3, 138);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 20);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Add to Cart";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.buttonAddtoCart_Click);
-            // 
-            // panel_Icecream_1
-            // 
-            this.panel_Icecream_1.Controls.Add(this.labelItemTItle);
-            this.panel_Icecream_1.Controls.Add(this.pictureBoxIcecream);
-            this.panel_Icecream_1.Controls.Add(this.numericUpDownAmount);
-            this.panel_Icecream_1.Controls.Add(this.buttonAddtoCart);
-            this.panel_Icecream_1.Location = new System.Drawing.Point(307, 13);
-            this.panel_Icecream_1.Name = "panel_Icecream_1";
-            this.panel_Icecream_1.Size = new System.Drawing.Size(141, 163);
-            this.panel_Icecream_1.TabIndex = 3;
-            // 
-            // labelItemTItle
-            // 
-            this.labelItemTItle.AutoSize = true;
-            this.labelItemTItle.Location = new System.Drawing.Point(30, 105);
-            this.labelItemTItle.Name = "labelItemTItle";
-            this.labelItemTItle.Size = new System.Drawing.Size(78, 13);
-            this.labelItemTItle.TabIndex = 3;
-            this.labelItemTItle.Text = " xx ICECREAM";
-            this.labelItemTItle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBoxIcecream
-            // 
-            this.pictureBoxIcecream.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxIcecream.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxIcecream.Name = "pictureBoxIcecream";
-            this.pictureBoxIcecream.Size = new System.Drawing.Size(134, 129);
-            this.pictureBoxIcecream.TabIndex = 0;
-            this.pictureBoxIcecream.TabStop = false;
-            // 
-            // numericUpDownAmount
-            // 
-            this.numericUpDownAmount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.numericUpDownAmount.Location = new System.Drawing.Point(93, 138);
-            this.numericUpDownAmount.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDownAmount.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownAmount.Name = "numericUpDownAmount";
-            this.numericUpDownAmount.Size = new System.Drawing.Size(44, 20);
-            this.numericUpDownAmount.TabIndex = 2;
-            this.numericUpDownAmount.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // buttonAddtoCart
-            // 
-            this.buttonAddtoCart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAddtoCart.Location = new System.Drawing.Point(3, 138);
-            this.buttonAddtoCart.Name = "buttonAddtoCart";
-            this.buttonAddtoCart.Size = new System.Drawing.Size(84, 20);
-            this.buttonAddtoCart.TabIndex = 1;
-            this.buttonAddtoCart.Text = "Add to Cart";
-            this.buttonAddtoCart.UseVisualStyleBackColor = true;
-            this.buttonAddtoCart.Click += new System.EventHandler(this.buttonAddtoCart_Click);
             // 
             // labelStoreTitle
             // 
@@ -407,14 +261,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            this.panel_Icecream_1.ResumeLayout(false);
-            this.panel_Icecream_1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcecream)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAmount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -428,23 +274,13 @@
         private System.Windows.Forms.Label labelItemsTotal;
         private System.Windows.Forms.Button buttonBuyItems;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelStore;
-        private System.Windows.Forms.Panel panel_Icecream_1;
-        private System.Windows.Forms.PictureBox pictureBoxIcecream;
-        private System.Windows.Forms.NumericUpDown numericUpDownAmount;
-        private System.Windows.Forms.Button buttonAddtoCart;
         private System.Windows.Forms.Label labelStoreTitle;
-        private System.Windows.Forms.Label labelItemTItle;
         private System.Windows.Forms.LinkLabel linkLabelEditAccount;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.LinkLabel linkLabelLogout;
     }
 }

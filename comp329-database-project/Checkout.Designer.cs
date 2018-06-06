@@ -118,6 +118,7 @@
             this.buttonBuyItems.TabIndex = 3;
             this.buttonBuyItems.Text = "Buy Items";
             this.buttonBuyItems.UseVisualStyleBackColor = true;
+            this.buttonBuyItems.Click += new System.EventHandler(this.buttonBuyItems_Click);
             // 
             // buttonReturn
             // 
@@ -128,6 +129,7 @@
             this.buttonReturn.TabIndex = 4;
             this.buttonReturn.Text = "Return";
             this.buttonReturn.UseVisualStyleBackColor = true;
+            this.buttonReturn.Click += new System.EventHandler(this.buttonReturn_Click);
             // 
             // Checkout
             // 

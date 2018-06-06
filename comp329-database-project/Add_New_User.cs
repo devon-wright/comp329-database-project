@@ -13,6 +13,7 @@ using System.Windows.Forms;
  *  - SQL check for username being taken
  *  - SQL insert for new user
  *  - On successful add close current window
+ *  - Make the city box load the active factory cities when loaded
  */ 
 
 namespace comp329_database_project
@@ -33,11 +34,11 @@ namespace comp329_database_project
             string streetAddress = textBoxStreet.Text;
             string city = textBoxCity.Text;
             string postcode = textBoxPostcode.Text;
-            string password = textBoxPassword.Text;
+            //string password = textBoxPassword.Text;
 
-            bool isFilledIn = true;
-            bool isUsernameFree = true; // <
-            bool isSuccessfulAdd = true;
+            bool isFilledIn = false;
+            bool isUsernameFree = false;
+            bool isSuccessfulAdd = false;
 
             //Check all textbox's - only continue if they are filled - otherwise tell the user
             if (string.IsNullOrWhiteSpace(firstname))
@@ -52,8 +53,10 @@ namespace comp329_database_project
                 isFilledIn = false;
             else if (string.IsNullOrWhiteSpace(postcode))
                 isFilledIn = false;
-            else if (string.IsNullOrWhiteSpace(password))
-                isFilledIn = false;
+            else
+                isFilledIn = true;
+            //else if (string.IsNullOrWhiteSpace(password))
+            //    isFilledIn = false;
 
             if (isFilledIn)
             {
