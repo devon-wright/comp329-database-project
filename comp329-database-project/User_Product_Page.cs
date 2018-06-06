@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace comp329_database_project
 {
-    public partial class User_Product_Page : Form
+    public partial class User_Window : Form
     {
-        public User_Product_Page()
+        private string username;
+
+        public User_Window(string firstname)
         {
             InitializeComponent();
+            username = firstname;
+            //Set the form user to this
+            linkLabelEditAccount.Text = username;
         }
 
         private void buttonRemoveSelected_Click(object sender, EventArgs e)
@@ -38,6 +43,11 @@ namespace comp329_database_project
         }
 
         private void linkLabelEditAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void linkLabelLogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }

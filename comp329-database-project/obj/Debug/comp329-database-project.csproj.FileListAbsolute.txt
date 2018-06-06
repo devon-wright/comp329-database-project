@@ -4,7 +4,9 @@ C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database
 C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329-database-project.csprojResolveAssemblyReference.cache
 C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329_database_project.Login_Page.resources
 C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329_database_project.Properties.Resources.resources
-C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329_database_project.User_Product_Page.resources
 C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329-database-project.csproj.GenerateResource.Cache
 C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329-database-project.exe
 C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329-database-project.pdb
+C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329_database_project.User_Window.resources
+C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329_database_project.Add_New_User.resources
+C:\Users\D-ASUS\Documents\Git Projects\comp329-database-project\comp329-database-project\obj\Debug\comp329_database_project.Checkout.resources
