@@ -16,5 +16,15 @@ namespace comp329_database_project
         {
             InitializeComponent();
         }
+
+        private void buttonAddProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancelAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
