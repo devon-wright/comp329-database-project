@@ -17,7 +17,7 @@ namespace comp329_database_project
 {
     public class OracleAccessWidget
     {
-        string dbString = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=dmw26;Password=.................;"; 
+        string dbString = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=dmw26;Password=.................;";
         OracleConnection connection;
 
         public OracleAccessWidget()
@@ -148,8 +148,9 @@ namespace comp329_database_project
                 }
             }
             catch (Exception ex)
-            { 
+            {
                 return false;
             }
         }
+    }
 }

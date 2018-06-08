@@ -24,7 +24,7 @@ namespace comp329_database_project
         {
             InitializeComponent();
             DBWIDGET = new OracleAccessWidget();
-            textBoxFirstname.Focus()
+            textBoxFirstname.Focus();
         }
 
         private void buttonLoginUser_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace comp329_database_project
             bool isCorrect = false;
 
             //Do an SQL check for user - edit "isCorrect"
-            isCorrect = DBWIDGET.itemExists("SELECT * FROM Person WHERE fname='" + username + "'"); // <<
+            //isCorrect = DBWIDGET.itemExists("SELECT * FROM Person WHERE fname='" + username + "'"); // <<
 
             if (isCorrect)
             {

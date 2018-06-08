@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Details.Designer.cs">
+      <DependentUpon>Account_Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_New_User.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Add_New_User.Designer.cs">
       <DependentUpon>Add_New_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Analytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Analytics.Designer.cs">
+      <DependentUpon>Admin_Analytics.cs</DependentUpon>
     </Compile>
     <Compile Include="Checkout.cs">
       <SubType>Form</SubType>
@@ -64,6 +81,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="New_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Employee.Designer.cs">
+      <DependentUpon>New_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Factory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Factory.Designer.cs">
+      <DependentUpon>New_Factory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Product.Designer.cs">
+      <DependentUpon>New_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OracleAccessWidget.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User_Product_Page.cs">
@@ -72,14 +108,29 @@
     <Compile Include="User_Product_Page.Designer.cs">
       <DependentUpon>User_Product_Page.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Account_Details.resx">
+      <DependentUpon>Account_Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_New_User.resx">
       <DependentUpon>Add_New_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Analytics.resx">
+      <DependentUpon>Admin_Analytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Checkout.resx">
       <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Employee.resx">
+      <DependentUpon>New_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Factory.resx">
+      <DependentUpon>New_Factory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Product.resx">
+      <DependentUpon>New_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,6 +144,7 @@
     <EmbeddedResource Include="User_Product_Page.resx">
       <DependentUpon>User_Product_Page.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
