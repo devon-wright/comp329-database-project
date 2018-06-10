@@ -44,15 +44,11 @@
             this.labelAddUserTitle = new System.Windows.Forms.Label();
             this.buttonCancelAdd = new System.Windows.Forms.Button();
             this.buttonAddUser = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.panelLoginAll.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLoginAll
             // 
-            this.panelLoginAll.Controls.Add(this.textBoxPassword);
-            this.panelLoginAll.Controls.Add(this.label7);
             this.panelLoginAll.Controls.Add(this.textBoxPostcode);
             this.panelLoginAll.Controls.Add(this.label6);
             this.panelLoginAll.Controls.Add(this.textBoxCity);
@@ -203,23 +199,6 @@
             this.buttonAddUser.UseVisualStyleBackColor = true;
             this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(62, 284);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Password:";
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Enabled = false;
-            this.textBoxPassword.Location = new System.Drawing.Point(123, 281);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(160, 20);
-            this.textBoxPassword.TabIndex = 17;
-            // 
             // Add_New_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,7 +231,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxFirstname;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label label7;
     }
 }

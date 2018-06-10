@@ -35,10 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLoginAll = new System.Windows.Forms.Panel();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBoxFirstname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLoginAll.SuspendLayout();
             this.SuspendLayout();
@@ -98,8 +97,7 @@
             // 
             // panelLoginAll
             // 
-            this.panelLoginAll.Controls.Add(this.textBoxPassword);
-            this.panelLoginAll.Controls.Add(this.label3);
+            this.panelLoginAll.Controls.Add(this.button1);
             this.panelLoginAll.Controls.Add(this.textBoxFirstname);
             this.panelLoginAll.Controls.Add(this.label2);
             this.panelLoginAll.Controls.Add(this.label1);
@@ -113,23 +111,6 @@
             this.panelLoginAll.Name = "panelLoginAll";
             this.panelLoginAll.Size = new System.Drawing.Size(334, 411);
             this.panelLoginAll.TabIndex = 5;
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Enabled = false;
-            this.textBoxPassword.Location = new System.Drawing.Point(119, 249);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(160, 20);
-            this.textBoxPassword.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 252);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Password:";
             // 
             // textBoxFirstname
             // 
@@ -146,6 +127,16 @@
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Firstname:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(247, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login_Page
             // 
@@ -173,8 +164,7 @@
         private System.Windows.Forms.Panel panelLoginAll;
         private System.Windows.Forms.TextBox textBoxFirstname;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -35,7 +35,7 @@ namespace comp329_database_project
             if (string.IsNullOrWhiteSpace(firstname))
                 isFilledIn = false;
             else if (string.IsNullOrWhiteSpace(lastname))
-                isFilledIn = false;
+                isFilledIn = false; 
             else if (string.IsNullOrWhiteSpace(phoneNumber))
                 isFilledIn = false;
             else if (string.IsNullOrWhiteSpace(streetAddress))

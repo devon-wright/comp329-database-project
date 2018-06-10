@@ -11,7 +11,7 @@ using System.Windows.Forms;
 /*
  *  TODO:
  *  - Add Admin SQL + Connect to Admin_Page form
- *  - Find a way to sepearate user from admin
+ *  - Find a way to sepearate user from admin(?)
  */ 
 
 namespace comp329_database_project
@@ -30,7 +30,6 @@ namespace comp329_database_project
         private void buttonLoginUser_Click(object sender, EventArgs e)
         {
             string username = textBoxFirstname.Text;
-            //string password = textBoxPassword.Text;
             bool isCorrect = false;
 
             //Do an SQL check for user - edit "isCorrect"
@@ -47,7 +46,7 @@ namespace comp329_database_project
             else
             {
                 //Show a dialogue box to reenter data, clear password field
-                MessageBox.Show("Firstname/Password is incorrect. Please re-enter");
+                MessageBox.Show("Firstname is incorrect. Please re-enter");
                 textBoxFirstname.Clear();
                 textBoxFirstname.Focus();
             }
@@ -56,7 +55,6 @@ namespace comp329_database_project
         private void buttonLoginAdmin_Click(object sender, EventArgs e)
         {
             string username = textBoxFirstname.Text;
-            //string password = textBoxPassword.Text;
             bool isCorrect = true;
 
             //Do an SQL check for admin - edit "isCorrect"
@@ -86,6 +84,12 @@ namespace comp329_database_project
             this.Hide();
             NewUser.ShowDialog();
             this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("QUERY [" + DBWIDGET.itemExists("SELECT * FROM Person WHERE fname='Devon'") + "]");
+            DBWIDGET.testConnection();
         }
     }
 }

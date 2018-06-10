@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 using Oracle.ManagedDataAccess.Client;
-//using Oracle.DataAccess.Types;
+using Oracle.ManagedDataAccess.Types;
 
 /*
  * TODO:
@@ -17,11 +18,36 @@ namespace comp329_database_project
 {
     public class OracleAccessWidget
     {
-        string dbString = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=dmw26;Password=.................;";
+        string dbString = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=COMP329_13;Password=VSmhECr9xu;";
         OracleConnection connection;
 
         public OracleAccessWidget()
         {
+        }
+
+        public bool testConnection()
+        {
+            try
+            {
+                string oradb = "Data Source=oracle.cms.waikato.ac.nz:1521/teaching.cms.waikato.ac.nz;User Id=COMP329_13;Password=VSmhECr9xu;";
+                OracleConnection conn = new OracleConnection(oradb);  // C#
+                conn.Open();
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "select * from Person";
+                cmd.CommandType = System.Data.CommandType.Text;
+                OracleDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                MessageBox.Show(dr.GetString(0));
+                conn.Dispose();
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
 
         public void openConnection()
@@ -149,6 +175,7 @@ namespace comp329_database_project
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
             }
         }
