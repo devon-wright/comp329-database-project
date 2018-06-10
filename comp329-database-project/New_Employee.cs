@@ -59,9 +59,6 @@ namespace comp329_database_project
                     //Do an SQL insert to add a new user - if successful then edit "isSuccessfulAdd"
                     // ...
 
-                    // Then update the listbox on the previous page
-                    // ...
-
                     if (isSuccessfulAdd)
                     {
                         // Close this page 

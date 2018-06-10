@@ -1,0 +1,13 @@
+Insert into Management(Manager_ID) VALUES (0), (1), (2);
+Insert into Customer (Customer_ID)) VALUES (0), (1), (2), (3), (4);
+Insert into Driver(Driver_ID)) VALUES (0), (1), (2), (3), (4);
+Insert into Delivery truck (Truck_ID, Type, Space_for_deilvery) VALUES (0,vgelwliu,11), (1,ullrnd,13), (2,xvusn,13), (3,bcfydoo,12), (4,qrijqh,12), (5,gilbwabx,17), (6,lowoklh,11), (7,phqlylve,16);
+Insert into Persons(personID,Fname, Lname, Phone_number, Street_Address, City, postcode) VALUES (0,oxbds,bdgyptexh,iqchq,sbgotdv,fwccv,aommn), (1,jyyqw,dbfni,amggrew,odeuvxbqa,nspkuj,gcsatchir), (2,oavushcnd,ockksyutg,mdmvdvn,cpggv,wkrnjno,uvifcvj), (3,oyicyfsi,xvluvyjr,ariibi,ukbggc,qgqnmbsf,wqtosidj), (4,lnowm,iekvecn,slasj,oaegq,pyslp,cpbohforu), (5,ttlac,vimqhqd,twsgfn,sxwpcwhf,eftdbrhyi,qbnxdu), (6,sceva,iqkev,xbsks,gqapbe,hwohp,cpppd), (7,spxqmm,vkeglbg,anyweqica,agfinqm,swwetjjr,nvxku);
+Insert into Ice Cream (Ice_Cream_ID, Flavour, Amount_made) VALUES (0,hnjvuqa,h), (1,nxvqwapvk,n), (2,csgnt,a), (3,hdotygbc,o), (4,xcrgete,a), (5,covsogpn,l), (6,tpdat,a), (7,wahhobcl,l), (8,ohtamac,c), (9,khuafsefj,b), (10,dvijvvc,p), (11,bslpji,f), (12,agvxxfrtv,j), (13,ceqeg,e), (14,ngmeixn,d), (15,rtgmkw,h);
+Insert into Factory(Factory_ID, Location, Amount_of_workers) VALUES (0,,8), (1,,8), (2,,1);
+Insert into Order (Date_Ordered, Time_ordered ,Ice_Cream_ID, Customer_ID) VALUES (11/5/2018,11:35,0,0), (13/8/2018,2:50,1,1), (10/12/2018,21:56,2,2), (19/1/2018,13:54,3,3), (20/11/2018,21:56,4,4);
+Insert into Makes (Factory_ID, Ice_Cream _ID) VALUES (0,0);
+Insert into Owns (Manager_ID, Factory_ID) VALUES (0,0), (1,0), (2,0);
+Insert into Delivers (Ice_cream_ID, Truck_ID) VALUES (0,0);
+Insert into Drives (Truck_ID, Driver_ID) VALUES (0,0), (1,1), (2,2), (3,3), (4,4);
+Insert into Employs (Manager_ID,Driver_ID) VALUES (0,0), (1,1), (2,2), (3,3), (0,4);
