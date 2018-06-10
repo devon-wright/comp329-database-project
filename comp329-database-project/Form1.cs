@@ -57,18 +57,18 @@ namespace comp329_database_project
         {
             string username = textBoxFirstname.Text;
             //string password = textBoxPassword.Text;
-            bool isCorrect = false;
+            bool isCorrect = true;
 
             //Do an SQL check for admin - edit "isCorrect"
-            isCorrect = DBWIDGET.itemExists("SELECT * FROM Person WHERE fname='" + username + "'"); // <<
+            //isCorrect = DBWIDGET.itemExists("SELECT * FROM Person WHERE fname='" + username + "'"); // <<
 
             if (isCorrect)
             {
                 //Login the admin - by opening Admin_Window form and hide Form1 form (this)
-                //Admin_Window AdminPage = new Admin_Window(username);
-                //this.Hide();
-                //Admin_Window.ShowDialog();
-                //this.Show(); // This is run once the Admin form is closed
+                Admin_Analytics AdminPage = new Admin_Analytics(username);
+                this.Hide();
+                AdminPage.ShowDialog();
+                this.Show(); // This is run once the Admin form is closed
             }
             else
             {

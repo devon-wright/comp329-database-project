@@ -19,12 +19,19 @@ namespace comp329_database_project
 
         private void buttonAddProduct_Click(object sender, EventArgs e)
         {
+            // Add a new product from the DB
+            string flavour = textBoxFlavour.Text;
+            string amountMade = textBoxIcecreamMade.Text;
+            string factoryname = comboBoxSelectFactory.Text;
 
+            //Do an SQL insert to add a new icecream to the DB
+            // ...
         }
 
         private void buttonCancelAdd_Click(object sender, EventArgs e)
         {
-
+            //close this window
+            this.Close();
         }
     }
 }
